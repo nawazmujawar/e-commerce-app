@@ -8,13 +8,13 @@ import {
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBONfkvnVwlx7tKsvpCboxEpKdNf0KjaO4",
-  authDomain: "e-commerce-app-9461d.firebaseapp.com",
-  projectId: "e-commerce-app-9461d",
-  storageBucket: "e-commerce-app-9461d.appspot.com",
-  messagingSenderId: "1091346128919",
-  appId: "1:1091346128919:web:c68067d8e06a4306a47c52",
-  measurementId: "G-R8VNNFE4TQ",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -37,7 +37,6 @@ const registerWithEmailAndPassword = async (name, email, password) => {
       authProvider: "local",
       email,
     });
-
   } catch (err) {
     alert(err.message);
   }
