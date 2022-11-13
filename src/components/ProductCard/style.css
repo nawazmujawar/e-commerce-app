@@ -1,0 +1,18 @@
+.productCard__container {
+  background-color: #eee;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.productCard__container:hover {
+  border: 2px solid lightblue;
+  box-shadow: 0 8px 8px -4px lightblue;
+  transform: scale(1.2);
+}
+.productCard__btn {
+  background-color: rgb(39, 101, 218);
+  color: white;
+}

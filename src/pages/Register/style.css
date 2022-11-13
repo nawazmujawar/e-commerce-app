@@ -1,0 +1,27 @@
+.registerFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.regForm {
+  background: #eee;
+  box-shadow: 0 8px 8px -4px lightblue;
+  padding: 20px;
+  border-radius: 20px;
+}
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 20vw;
+}
+.registerForm > input {
+  width: 80%;
+  padding: 16px;
+  border-radius: 20px;
+  margin: 20px;
+}
